@@ -12,12 +12,12 @@ public class Consecutive_Duplicate {
     }
 
         public static boolean Cons_duplicate (int[] arr, int N){
-            int numm = arr[0];
+            int num = arr[0];
             for (int i = 1; i < N; i++) {
-                if (numm == arr[i]) {     // OR [arr[i-1]==arr[i]]    return true;     else return false;
+                if (num == arr[i]) {     // OR [arr[i-1]==arr[i]]    return true;     else return false;
                     return true;
                 } else {
-                    numm = arr[i];
+                    num = arr[i];
                 }
             }
             return false;
